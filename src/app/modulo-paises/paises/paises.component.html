@@ -1,0 +1,17 @@
+
+<div class="container_list" *ngIf="paisesES">
+
+  <mat-list>
+    <div mat-subheader id="subheader">{{ titulo }}</div>
+    <mat-list-item *ngFor="let pais of paisesES; trackBy : trackByFn">
+      <mat-icon mat-list-icon>
+        <img [src]=" pais.flag " alt="pais.flag">
+      </mat-icon>
+      <h4 mat-line>{{ pais.name  }} - <strong>{{ pais.capital }}</strong> </h4>
+      <button mat-raised-button (click)="eliminarPais(pais.name)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </mat-list-item>
+  </mat-list>
+
+</div>

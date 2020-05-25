@@ -1,0 +1,17 @@
+
+<div class="container_list" *ngIf="usuarios">
+
+  <mat-list>
+    <div mat-subheader id="subheader">Usuarios</div>
+    <mat-list-item *ngFor="let usuario of usuarios; trackBy : trackByFn">
+      <mat-icon mat-list-icon>
+        <img [src]=" usuario.avatar " alt="usuario.avatar">
+      </mat-icon>
+      <h4 mat-line>{{ usuario.first_name  }} - {{ usuario.last_name }}</h4>
+      <button mat-raised-button (click)="eliminarUser(usuario.id)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </mat-list-item>
+  </mat-list>
+
+</div>

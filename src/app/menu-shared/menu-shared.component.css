@@ -1,0 +1,11 @@
+
+  .mat-toolbar span {
+    margin-right: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .activado {
+    color: rgba(120, 113, 113, 0.87);
+  }

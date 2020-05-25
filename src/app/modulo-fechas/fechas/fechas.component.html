@@ -1,0 +1,79 @@
+
+<div class="container_list">
+
+  <mat-list>
+    <div mat-subheader id="subheader">{{ titulo }}</div>
+
+    <mat-list-item>
+      <h4 mat-line *ngIf="formatDate">Formato de fecha : <strong>{{ formatDate }}</strong>  </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Hace cuantos dias : <strong>{{ dateDistance }}</strong>  </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Milisegundos : <strong>{{ miliseconds }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Minuto actual : <strong>{{ minutes }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Dia de la semana : <strong>{{ day }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Tiempo Unix : <strong>{{ timeUnix }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Fecha en Milisegundos : <strong>{{ dateMiliseconds }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Fecha duracion : <strong>{{ dateDuration }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Es esta fecha <i>2018-2-10</i> es anterior a <i>2019-1-20</i> : <strong>{{ beforeDate }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line>Es esta fecha <i>2021-2-10</i> es alguna fecha futura? : <strong>{{ futureDate }}</strong> </h4>
+      <button mat-raised-button>
+        <i class="far fa-calendar-alt"></i>
+      </button>
+    </mat-list-item>
+
+  </mat-list>
+
+</div>
